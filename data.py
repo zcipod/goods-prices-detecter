@@ -17,9 +17,9 @@ DATA = {
         "COLES SUPER TAMPONS 32PACK",
         "4.00",
         "NESCAFE DOLCE GUSTO 186GRAM",
-        "$8.50",
+        "8.50",
         "COLES REGULAR TAMPON 40PACK",
-        "$4.00",
+        "4.00",
         "% HASK CONDITIONER 355ML",
         "15.00",
         "% HASK SHAMPOO 355ML",
@@ -113,5 +113,26 @@ DATA = {
         "$32.69",
         "Change",
         "$0.00"
+    ],
+    "Kmart": [
+        "KMART LIDCOMBE WWW.KMART.COM.AU",
+        "TAX INVOICE ABN 73 004 700 485",
+        "Low prices for life",
+        "MANAGER:THOMAS PH:02 8748 7400",
+        "17/10/20  12:27 083 SALES",
+        "4189 1220 083",
+        "%BRAID BUCKET HAT",
+        "9341107487754",
+        "5.00",
+        "%LINEN CAP",
+        "9341107364734",
+        "6.00",
+        "%PIRATE COSTUME 3-5",
+        "9341106523378",
+        "9.00"
+        "TOTAL ITEMS = 3",
+        "TOTAL",
+        "20.00",
+        "KMART"
     ]
 }

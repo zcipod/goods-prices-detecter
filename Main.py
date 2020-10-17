@@ -21,7 +21,6 @@ def findPriceOfProducts(data):
     while not re.search('total', data[index], re.I):
         findPrice = re.match('\\$?([0-9]+\\.[0-9]{2}$)', data[index])
         if findPrice:
-            record = {}
             # Kmart has 13 numbers between products' names and prices
             if re.match('^[0-9]{13}$', data[index - 1]):
                 record = Kmart.findRecord(data, index, findPrice)
@@ -39,8 +38,14 @@ def findPriceOfProducts(data):
                 record = findOneRowRecord(data, index, findPrice)
 
             results.append(record)
+            print(record)
         index += 1
     return results
 
 
-print(findPriceOfProducts(DATA['Coles']))
+def main():
+    print('Total records: ', len(findPriceOfProducts(DATA['Coles'])))
+
+
+if __name__ == '__main__':
+    main()

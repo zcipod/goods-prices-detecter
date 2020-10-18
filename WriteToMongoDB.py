@@ -1,11 +1,11 @@
 import pymongo
+from URI import DB_URI
 
 
 class Connect(object):
     @staticmethod
     def get_connection():
-        # the credential should not be written in the code
-        dbUri = "mongodb+srv://zcipod:zhao7895123@cocktailinformation.8e6ap.mongodb.net/pricesOfProducts?retryWrites=true&w=majority"
+        dbUri = DB_URI
         return pymongo.MongoClient(dbUri, ssl=True, ssl_cert_reqs='CERT_NONE')
 
 

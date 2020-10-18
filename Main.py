@@ -3,6 +3,7 @@ import Woolies
 import Coles
 import Kmart
 import ChemistWarehouse
+import WriteToMongoDB
 from data import DATA
 
 
@@ -44,7 +45,9 @@ def findPriceOfProducts(data):
 
 
 def main():
-    print('Total records: ', len(findPriceOfProducts(DATA['Coles'])))
+    results = findPriceOfProducts(DATA['Coles'])
+    WriteToMongoDB.insertManyRecords(results)
+    print('\nTotal records: ', len(results))
 
 
 if __name__ == '__main__':
